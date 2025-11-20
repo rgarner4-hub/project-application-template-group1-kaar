@@ -41,13 +41,15 @@ python run.py --feature 0
 
 That will output basic information about the issues to the command line.
 
-### Feature 1 Word Count and Completion Time Correlation
+### Feature 1: Word Count and Completion Time Correlation
 
 This feature shows the correlation between the word count of an issue description vs how ling it took
 for the issue to be resolved.
 
 To run this feature:
+```
 python run.py --feature 1
+```
 
 The feature will ask you to enter a word count limit, this limit lets the user hone in on specific points of data
 and get rid of any outliers in the data
