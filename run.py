@@ -10,6 +10,9 @@ import argparse
 import config
 from example_analysis import ExampleAnalysis
 from issueProgression_analysis import IssueProgressionAnalysis
+from day_of_week_analysis import DayOfWeekAnalysis
+
+from wordCount_analysis import WordCountAnalysis
 
 
 def parse_args():
@@ -44,14 +47,16 @@ def parse_args():
 args = parse_args()
 # Add arguments to config so that they can be accessed in other parts of the application
 config.overwrite_from_args(args)
+print("DATA PATH:", config.get_parameter("data_path"))
+
     
 # Run the feature specified in the --feature flag
 if args.feature == 0:
     ExampleAnalysis().run()
 elif args.feature == 1:
-    pass # TODO call first analysis
+    WordCountAnalysis().run()
 elif args.feature == 2:
-    pass # TODO call second analysis
+    DayOfWeekAnalysis().run()
 elif args.feature == 3:
     IssueProgressionAnalysis().run() # TODO call third analysis
 else:
