@@ -43,8 +43,10 @@ That will output basic information about the issues to the command line.
 
 ### Feature 1: Word Count and Completion Time Correlation
 
-This feature shows the correlation between the word count of an issue description vs how ling it took
+This feature shows the correlation between the word count of an issue description vs how long it took
 for the issue to be resolved.
+
+The question is: Do longer and more descriptive issue descriptions lead to a faster resolution time?
 
 To run this feature:
 ```
