@@ -11,6 +11,7 @@ import config
 from example_analysis import ExampleAnalysis
 from issueProgression_analysis import IssueProgressionAnalysis
 from day_of_week_analysis import DayOfWeekAnalysis
+from label_analysis import LabelAnalysis
 
 from wordCount_analysis import WordCountAnalysis
 
@@ -59,5 +60,7 @@ elif args.feature == 2:
     DayOfWeekAnalysis().run()
 elif args.feature == 3:
     IssueProgressionAnalysis().run() # TODO call third analysis
+elif args.feature == 4:
+    LabelAnalysis().run()
 else:
     print('Need to specify which feature to run with --feature flag.')
